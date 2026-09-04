@@ -25,7 +25,6 @@ public class Problem5_BankTransactionReferenceValidator {
             return "Invalid: wrong length";
         }
 
-        // Check first 3 characters are letters
         for (int i = 0; i < 3; i++) {
 
             if (!Character.isLetter(reference.charAt(i))) {
@@ -33,7 +32,6 @@ public class Problem5_BankTransactionReferenceValidator {
             }
         }
 
-        // Check remaining 11 characters are digits
         for (int i = 3; i < reference.length(); i++) {
 
             if (!Character.isDigit(reference.charAt(i))) {
